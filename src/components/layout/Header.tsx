@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-background/95 backdrop-blur-sm sticky top-0 z-50 border-b">
+    <header className="bg-background/95 backdrop-blur-sm sticky top-0 z-50 border-b border-border/40">
       <div className="container mx-auto py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
@@ -22,13 +22,13 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-8">
             <NavLinks />
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="outline" className="font-medium">Log In</Button>
-            <Button className="font-medium bg-primary hover:bg-primary/90">Get Started</Button>
+            <Button variant="outline" className="font-medium rounded-full">Log In</Button>
+            <Button className="font-medium bg-primary hover:bg-primary/90 rounded-full">Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -43,13 +43,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && isMobile && (
-          <div className="md:hidden py-4 animate-fade-in">
-            <nav className="flex flex-col gap-4 mb-6">
+          <div className="md:hidden py-6 animate-fade-in">
+            <nav className="flex flex-col gap-5 mb-6">
               <NavLinks mobile onLinkClick={() => setIsMenuOpen(false)} />
             </nav>
             <div className="flex flex-col gap-3">
-              <Button variant="outline" className="w-full font-medium">Log In</Button>
-              <Button className="w-full font-medium bg-primary hover:bg-primary/90">Get Started</Button>
+              <Button variant="outline" className="w-full font-medium rounded-full">Log In</Button>
+              <Button className="w-full font-medium bg-primary hover:bg-primary/90 rounded-full">Get Started</Button>
             </div>
           </div>
         )}

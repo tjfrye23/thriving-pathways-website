@@ -43,7 +43,7 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <Card 
               key={index} 
-              className="card-hover border border-border/50 bg-background/80"
+              className="card-hover border border-border/30 bg-background/80 rounded-xl overflow-hidden"
             >
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <div className="mb-5 p-3 rounded-full bg-primary/10">

@@ -7,19 +7,19 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 33% 98%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 246 84% 66%;
+    --primary: 272 92% 56%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 250 95% 76%;
+    --secondary: 285 100% 60%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -33,9 +33,9 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 246 84% 66%;
+    --ring: 272 92% 56%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -48,19 +48,19 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 222 47% 11%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 222 47% 11%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 246 84% 66%;
+    --primary: 272 92% 56%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 250 95% 76%;
+    --secondary: 285 100% 60%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
@@ -74,7 +74,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 246 84% 66%;
+    --ring: 272 92% 56%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -118,7 +118,7 @@
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(157, 78, 221, 0.1) 0%, rgba(224, 51, 255, 0.1) 100%);
 }
 
 .gradient-text {
@@ -133,3 +133,12 @@
   transform: translateY(-5px);
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
+
+.hero-gradient {
+  background: radial-gradient(circle at top right, rgba(157, 78, 221, 0.15) 0%, rgba(255, 255, 255, 0) 50%);
+}
+
+.button-glow {
+  box-shadow: 0 0 25px 5px rgba(157, 78, 221, 0.4);
+}
+

@@ -17,14 +17,14 @@ const CallToActionSection = () => {
             <Button 
               size="lg" 
               variant="secondary" 
-              className="text-primary hover:text-primary font-medium"
+              className="text-primary hover:text-primary font-medium rounded-full"
             >
               Get Started Now
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white/20 hover:text-white font-medium group"
+              className="border-white text-white hover:bg-white/20 hover:text-white font-medium group rounded-full"
             >
               Contact Us
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition" />
