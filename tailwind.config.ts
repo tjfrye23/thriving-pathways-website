@@ -12,14 +12,10 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: "2rem",
       screens: {
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1400px'
-      }
+        "2xl": "1400px",
+      },
     },
     extend: {
       colors: {
@@ -29,24 +25,24 @@ export default {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: 'hsl(210, 87%, 36%)',
-          foreground: 'hsl(0, 0%, 100%)'
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))'
         },
         secondary: {
-          DEFAULT: 'hsl(33, 88%, 54%)',
-          foreground: 'hsl(0, 0%, 20%)'
+          DEFAULT: 'hsl(var(--accent))',  // Replace with accent color
+          foreground: 'hsl(var(--accent-foreground))'
         },
         muted: {
-          DEFAULT: 'hsl(210, 20%, 95%)',
-          foreground: 'hsl(210, 10%, 50%)'
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))'
         },
         accent: {
-          DEFAULT: 'hsl(262, 70%, 50%)',
-          foreground: 'hsl(0, 0%, 100%)'
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))'
         },
         destructive: {
-          DEFAULT: 'hsl(0, 72%, 51%)',
-          foreground: 'hsl(0, 0%, 100%)'
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))'
         }
       },
       borderRadius: {
