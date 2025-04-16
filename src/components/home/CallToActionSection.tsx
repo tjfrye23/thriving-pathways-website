@@ -17,7 +17,7 @@ const CallToActionSection = () => {
             <Button 
               size="lg" 
               variant="default" 
-              className="text-white hover:text-white/90 font-medium rounded-full"
+              className="text-white hover:text-white/90 dark:text-primary font-medium rounded-full"
             >
               Get Started Now
             </Button>
@@ -37,4 +37,3 @@ const CallToActionSection = () => {
 };
 
 export default CallToActionSection;
-
