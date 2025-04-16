@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -7,44 +6,33 @@
 
 @layer base {
   :root {
-    --background: 220 33% 98%;
-    --foreground: 222 47% 11%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
-
+    --background: 210 20% 98%;     // Very Light Gray
+    --foreground: 220 47% 11%;     // Dark Navy
+    --card: 0 0% 100%;             // Pure White
+    --card-foreground: 220 47% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-
-    --primary: 272 92% 56%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 285 100% 60%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 252 94% 85%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
+    --popover-foreground: 220 47% 11%;
+    
+    --primary: 210 87% 36%;        // Deep Blue
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 33 88% 54%;       // Warm Orange
+    --secondary-foreground: 0 0% 20%;
+    
+    --muted: 210 20% 95%;          // Light Gray
+    --muted-foreground: 210 10% 50%;
+    
+    --accent: 262 70% 50%;         // Rich Purple
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 72% 51%;      // Soft Red
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 214.3 31.8% 91.4%;   // Light Border
     --input: 214.3 31.8% 91.4%;
-    --ring: 272 92% 56%;
-
+    --ring: 210 87% 36%;           // Primary Color Ring
+    
     --radius: 0.75rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -141,4 +129,3 @@
 .button-glow {
   box-shadow: 0 0 25px 5px rgba(157, 78, 221, 0.4);
 }
-
