@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-muted/30 border-t">
       <div className="container mx-auto py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="space-y-4">
             <Link to="/" className="inline-block">
               <span className="text-xl font-bold font-heading gradient-text">Thriving Pathways</span>
@@ -47,27 +47,6 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-muted-foreground hover:text-primary transition">Mentorship</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="font-bold text-lg mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition">Success Stories</a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition">Blog</a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition">Events</a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition">FAQ</a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition">Support</a>
               </li>
             </ul>
           </div>
