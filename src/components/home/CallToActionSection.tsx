@@ -17,7 +17,7 @@ const CallToActionSection = () => {
             <Button 
               size="lg" 
               variant="secondary" 
-              className="text-primary hover:text-primary font-medium rounded-full"
+              className="text-white hover:text-white/90 font-medium rounded-full"
             >
               Get Started Now
             </Button>
