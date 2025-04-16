@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,18 +28,22 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
+            <ThemeToggle />
             <Button variant="outline" className="font-medium rounded-full">Log In</Button>
             <Button className="font-medium bg-primary hover:bg-primary/90 rounded-full">Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
-            onClick={toggleMenu} 
-            className="md:hidden p-2 text-foreground hover:text-primary transition"
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button 
+              onClick={toggleMenu} 
+              className="p-2 text-foreground hover:text-primary transition"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
