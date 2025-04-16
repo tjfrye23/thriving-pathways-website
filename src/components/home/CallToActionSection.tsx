@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -24,7 +23,7 @@ const CallToActionSection = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-primary text-primary hover:bg-primary/20 hover:text-primary font-medium group rounded-full"
+              className="border-primary text-white bg-transparent hover:bg-primary/20 hover:text-white font-medium group rounded-full"
             >
               Contact Us
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition" />
@@ -37,4 +36,3 @@ const CallToActionSection = () => {
 };
 
 export default CallToActionSection;
-
