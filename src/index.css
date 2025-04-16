@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -6,31 +7,31 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;     // Very Light Gray
-    --foreground: 220 47% 11%;     // Dark Navy
-    --card: 0 0% 100%;             // Pure White
+    --background: 210 20% 98%;     /* Very Light Gray */
+    --foreground: 220 47% 11%;     /* Dark Navy */
+    --card: 0 0% 100%;             /* Pure White */
     --card-foreground: 220 47% 11%;
     --popover: 0 0% 100%;
     --popover-foreground: 220 47% 11%;
     
-    --primary: 210 87% 36%;        // Deep Blue
+    --primary: 210 87% 36%;        /* Deep Blue */
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 33 88% 54%;       // Warm Orange
+    --secondary: 33 88% 54%;       /* Warm Orange */
     --secondary-foreground: 0 0% 20%;
     
-    --muted: 210 20% 95%;          // Light Gray
+    --muted: 210 20% 95%;          /* Light Gray */
     --muted-foreground: 210 10% 50%;
     
-    --accent: 262 70% 50%;         // Rich Purple
+    --accent: 262 70% 50%;         /* Rich Purple */
     --accent-foreground: 0 0% 100%;
     
-    --destructive: 0 72% 51%;      // Soft Red
+    --destructive: 0 72% 51%;      /* Soft Red */
     --destructive-foreground: 0 0% 100%;
     
-    --border: 214.3 31.8% 91.4%;   // Light Border
+    --border: 214.3 31.8% 91.4%;   /* Light Border */
     --input: 214.3 31.8% 91.4%;
-    --ring: 210 87% 36%;           // Primary Color Ring
+    --ring: 210 87% 36%;           /* Primary Color Ring */
     
     --radius: 0.75rem;
   }
