@@ -16,7 +16,7 @@ const CallToActionSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              variant="secondary" 
+              variant="default" 
               className="text-white hover:text-white/90 font-medium rounded-full"
             >
               Get Started Now
@@ -37,3 +37,4 @@ const CallToActionSection = () => {
 };
 
 export default CallToActionSection;
+
