@@ -73,6 +73,7 @@ const NavLinks = ({ mobile, onLinkClick }: NavLinksProps) => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Market Insights", path: "/insights" },
+    { name: "Contact Us", path: "/contact" },
   ];
 
   return (
