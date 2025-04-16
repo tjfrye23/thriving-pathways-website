@@ -1,7 +1,6 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -29,8 +28,6 @@ const Header = () => {
 
           <div className="hidden md:flex items-center gap-4">
             <ThemeToggle />
-            <Button variant="outline" className="font-medium rounded-full">Log In</Button>
-            <Button className="font-medium bg-primary hover:bg-primary/90 rounded-full">Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -52,10 +49,6 @@ const Header = () => {
             <nav className="flex flex-col gap-5 mb-6">
               <NavLinks mobile onLinkClick={() => setIsMenuOpen(false)} />
             </nav>
-            <div className="flex flex-col gap-3">
-              <Button variant="outline" className="w-full font-medium rounded-full">Log In</Button>
-              <Button className="w-full font-medium bg-primary hover:bg-primary/90 rounded-full">Get Started</Button>
-            </div>
           </div>
         )}
       </div>
