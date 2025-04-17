@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,12 +26,12 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <ThemeToggle />
+            {/* ThemeToggle removed */}
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-2">
-            <ThemeToggle />
+            {/* ThemeToggle removed */}
             <button 
               onClick={toggleMenu} 
               className="p-2 text-foreground hover:text-primary transition"
